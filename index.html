@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panama Coffee - Taste the Difference</title>
+  <meta name="description" content="Premium coffee from Panama. Discover the rich flavors and unique aroma of Panamanian coffee.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      background: #f7f3ef;
+      color: #3e2723;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px 60px 20px;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(62, 39, 35, 0.5);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0 0 20px 0;
+      letter-spacing: 2px;
+    }
+    h2 {
+      color: #795548;
+      margin-top: 40px;
+    }
+    .btn {
+      background: #795548;
+      color: #fff;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #a1887f;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px 20px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(62,39,35,0.08);
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .product {
+      background: #fbeee6;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(62,39,35,0.07);
+      padding: 20px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: translateY(-6px) scale(1.03);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .product h3 {
+      margin: 10px 0 8px 0;
+      color: #6d4c41;
+    }
+    .product p {
+      font-size: 0.98rem;
+      color: #5d4037;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      color: #795548;
+      text-decoration: underline;
+    }
+    @media (max-width: 700px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        padding: 60px 10px 40px 10px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero-content">
+      <h1>Panama Coffee</h1>
+      <p>Experience the world-renowned taste of Panamanian coffee, grown in the lush highlands of Boquete and Volcán.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Our Coffee</h2>
+    <p>Our coffee beans are handpicked from the fertile volcanic soils of Panama, where the unique climate and altitude create a cup like no other. We work directly with local farmers to bring you the freshest, most flavorful beans, roasted to perfection.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Geisha Coffee Beans">
+        <h3>Geisha Beans</h3>
+        <p>Famed for their floral aroma and vibrant acidity. The pride of Panama.</p>
+        <span class="btn">$35 / 250g</span>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Catuai Coffee">
+        <h3>Catuai Roast</h3>
+        <p>Rich, chocolatey notes with a smooth finish. Perfect for espresso lovers.</p>
+        <span class="btn">$18 / 250g</span>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Typica Coffee">
+        <h3>Typica Blend</h3>
+        <p>Classic Panamanian profile: balanced, sweet, and aromatic.</p>
+        <span class="btn">$16 / 250g</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Questions or wholesale inquiries? <br>
+      Email us at <a href="mailto:info@panamacoffee.com">info@panamacoffee.com</a>
+    </p>
+  </section>
+
+  <footer style="text-align:center; padding: 30px 0 10px 0; color: #a1887f; font-size: 0.95rem;">
+    &copy; 2024 Panama Coffee. All rights reserved.
+  </footer>
+</body>
+</html>
